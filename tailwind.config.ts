@@ -13,9 +13,25 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
+        commissioner: ['commissioner', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         heartless: ['Heartless', 'serif'],
-      }
+        beefour: ['BeeFour','serif'],
+        reacleblack: ['ReacleBlack', 'serif'],
+        sfpro: ['SfPro', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.8s ease-out forwards',
+        'fade-up-delay': 'fadeUp 1.6s ease-out forwards',
+        'fade-up-more-delay': 'fadeUp 2.4s ease-out forwards',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],

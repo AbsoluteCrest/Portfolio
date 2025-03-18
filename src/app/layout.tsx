@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "@/app/components/Footer";
+import NavBar from "@/app/components/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,20 +25,22 @@ const poppinsRegular = localFont({
 export const metadata: Metadata = {
   title: "AbsoluteCrest - portfolio",
   description: "My portfolio",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+      <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppinsRegular.variable}antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${poppinsRegular.variable}antialiased`}
       >
-        {children}
+      {children}
+      <Footer />
       </body>
-    </html>
+      </html>
   );
 }
