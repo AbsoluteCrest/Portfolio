@@ -12,7 +12,7 @@ const Footer = () => {
                         Telefon: +48 519 551 514
                     </li>
                     <li className="flex items-center p-2">
-                        E-mail: piotrek.ruzansi@gmail.com
+                        E-mail: piotrek.ruzanski@gmail.com
                     </li>
                     <li className="flex items-center p-2">
                         Adress
