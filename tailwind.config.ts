@@ -25,12 +25,17 @@ export default {
         'fade-up': 'fadeUp 0.8s ease-out forwards',
         'fade-up-delay': 'fadeUp 1.6s ease-out forwards',
         'fade-up-more-delay': 'fadeUp 2.4s ease-out forwards',
+        'fade-in': 'fadeIn 0.5s ease-in-out forwards',
       },
       keyframes: {
         fadeUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        fadeIn: {
+          'from': { opacity: '0', transform: 'translateY(10px)' },
+          'to': { opacity: '1', transform: 'translateY(0)' },
+        }
       },
     },
   },
